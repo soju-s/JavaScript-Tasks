@@ -1,0 +1,192 @@
+
+
+
+                                Java Script (in Back end using node server)
+                    Dynamicaly typed Language/ Synchrnous Single threaded  Programming Language
+
+            1. to display content - console.log(message)
+            2. variable - to store data : varaible-name, var/let/const keyword, hoisting
+            3. Identifiers 
+            4. Data Types
+            5. Operators
+                5.1 Arithmetic Operators: + - / * % **
+                5.2 Assignment Operators: =
+                5.3 Relational Operators: > < >= <= == !=
+                5.4 Logical Operators: && || ! (AND OR NOT)
+                    AND                 OR              NOT
+                    T && T => T         T || T => T     !T = F
+                    T && F => F         T || F => T     !F = T
+                    F && T => F         F || T => T
+                    F && F => F         F || F => F
+                5.5 Increment / Decrement Operators: ++ --
+                5.6 Shorthand Operators: += -= *=
+                5.7 Ternary Operators: condition?true statements:false statements
+                5.8 truthee Operator: condition && true case
+                5.9 to convert string to number: use + operator infront of string varaible
+                5.10 == , ===
+            6. Decisoin making statements - 
+                - if - else statements
+                - else if ladder
+            7. Looping statements
+                - while Loop:
+                    syntax:
+                        initialise a variable
+                        while(condition){
+                            statements to be repeated
+                            change varaible used inside condition
+                        }
+                - for Loop:
+                    syntax:
+                        for(initialisation;condition;increment/decrement){
+                            //state steps to be repeated when condition become true
+                        }
+                - Nested Loop - a Loop inside another loop
+            8. Functions 
+                - Function definition
+                    function function-name(arg1,arg2...agrn){
+                        function body
+                    }
+                - Function Call
+                    function-name(arg1,arg2...agrn)
+                - Types of Functions
+                    - Arrow function
+                    - call back function -setTimeout()
+                    - Anonymous function / self executing function
+                    - Nested function - closure
+                    - predefined function - console.log()
+            9. Array - to store more than one value in a variable
+                - Nested Array
+                - Array Method
+                    - push()
+                    - pop()
+                    - sort()
+                    - map()
+                    - filter()
+                    - forEach()
+                    - find()
+                    - reduce()
+                    - reduceRight()
+                    - some()
+                    - splice()
+                    - indexOf()
+                    - includes(value)
+                    - flat(Infinity)
+                    - shift()
+                    - Array.from()
+            10. String 
+                - Methods
+                    - toUpperCase()
+                    - toLowerCase()
+                    - startsWith()
+                    - endsWith()
+                    - substring()
+                    - slice()
+                    - split()
+                    - trim()
+                    - eval()
+            11. Objects - key-value pairs {key:value}
+            12. Object Oriented Programming
+                - Basic Concepts
+                    - Objects: real world entity
+                    - Class:Blueprint of Object
+                    - Reference: this keyword
+                - Features
+                    - Inheritance 
+                        - classical Inheritance - extends keyword
+                        - prototype Inheritance - __proto__ 
+                    - Function Overloading
+                        - spread operator ...
+            13. Exception / Error Handling
+                - Using try-catch-finally block
+
+
+                                Java Script (in Front end - scripting Language)
+                            --------------------------------
+
+                1. DOM - Document Object model: an interface between scripting language and web page structure
+                2. Access HTML Elements in JS
+                    - Using tag name: document.getElementByTagName('tag-name')
+                    - Using Id: document.getElementById('id')
+                    - Using class name: document.getElementByClassName('class-name') 
+                    - Using querySelector: document.querySelector('tag/#id/.class')
+                    - Using querySelectorAll: document.querySelectorAll('tag/#id/.class')
+                3. Accessing and Updating content inside HTML Elements using js
+                    - innerHTML : get/set content from an html Elements
+                    - textContent : get/set content from an html Elements
+                4. Event: Actions performed by user it trigger updates in DOM
+                    - click
+                    - keydown
+                    - keyup
+                    - submit
+                    - load
+                    - resize
+                    - scroll
+                5. JS - Dynamic web pages
+                    - Voting eligibility 
+                    - Digital clock 
+                    - To Do 
+                    - Calculator
+                    - Landing page
+                6. local storage - To permanently store data in browser, its stored as key-value pair, both data type should be string
+                    - Methods
+                        - setItem(key,value): to store data in local storage
+                        - getItem(key): to get data from local storage
+                        - removeItem(key): to remove items from local storage
+                7. API - Application Programming Interface
+                    - URL -Uniform Resource Locator
+                        ex: http://api.example.com/products
+                    - URI -Uniform Resource Identifier
+                            URL:http://api.example.com/
+                            URI:/products
+                    - Parameters
+                        - Path Parameters
+                            ex: http://food.com/restuarant/1/total-orders
+                            url: http://food.com
+                            uri:/restuarant
+                            path Parameters: 1
+                        - Query Parameters
+                        - Body Params
+                            {"mobile": "9744298917"}
+                        - Headers
+
+                    - REST API Methods
+                        - GET / POST / PUT / DELETE
+                    - API Commonly used
+                        - JSONPlaceholder API - FAKE DATA
+                        - FakeStore API - FAKE DATA
+                        - REST COUNTRIES API
+                        - OpenWeatherMap API
+
+                8. HTTP - Hyper Text Transfer Protocol
+                    - HTTP Methods
+                        - GET - To read / fetch data from server
+                        - POST - To create a new data in server
+                        - PUT - To update data completely
+                        - PATCH - To update data partially
+                        - DELETE - To delete data from server
+                    - HTTP Response
+                        - 1xx : Information
+                        - 2xx : Success
+                        - 3xx : Redirection
+                        - 4xx : Client Error
+                        - 5xx : Server Error
+                9. JSON - Java Script Object Notation
+                            { "key":value }
+                10. Function Call In JS
+                    - Synchronus Function Call - without a time delay it will execute the call
+                    - Asynchronous function call - with a time delay it will execute the call
+                        -   Call Back function - call back queue
+                        -   API Call - micro task queue - high priority queue
+                        -   Event Loop
+                        -   Call Stack - only one stack is available : Single threaded 
+
+                11. AJAX - Asynchrnous Java Script XML : to make api call using JS
+                    - Using XMLHTTPRequest - ToDo Listing (json placeholder api)
+                    - Using fetch - E-commerce Products page (fake store api)
+                        -   Promise : to solve asynchronus function call
+                            - then((response)=> {call back function bdoy}) -resolved state
+                            - pending state
+                            - catch(call back function) -reject state
+                    - Using async await keyword - COUNTRIES app
+
+
